@@ -53,7 +53,10 @@ $('#back-to-top').on('click', function () {
 });
 
 //initialiaze gallery
-baguetteBox.run('.tz-gallery');
+const gallery = document.querySelector('tz-gallery');
+if(gallery !== null) {
+    baguetteBox.run('.tz-gallery');
+}
 
 //solving IOS problem
 $(document).ready(function () {
