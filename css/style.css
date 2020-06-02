@@ -1,7 +1,7 @@
 /*----------------------------*\
 PALETTE COLORI:
 rosso: #CC2623;
-grigio: #717377; 
+grigio: #717377;
 \*----------------------------*/
 
 /*----------------------------*\
@@ -261,7 +261,8 @@ h5 {
 }
 
 #menuPage .title{
-    padding-top: 2em !important;
+    padding-top: 4em !important;
+    color: black !important;
 }
 
 .bg-menu{
@@ -269,14 +270,14 @@ h5 {
 }
 
 .bg-menuPage-container {
-    height: 50vh;
+    height: 60vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .bg-menuPage{
-    background-image: url('../img/menu/background.jpeg');
+    background-image: url('../img/menu/background.JPG');
 }
 
 .bg-menuProperty {
@@ -300,21 +301,30 @@ h5 {
 	background-image: url(../img/menu/griglia.jpeg)
 }
 
-.bgContorniImg {
+.bg-contorni {
 	background-image: url(../img/menu/contorni.jpeg)
 }
 
-.bgPizzeImg {
+.bg-pizze {
 	background-image: url(../img/menu/pizze.JPG);
 	background-position: center
 }
 
-.bgDolciImg {
+.bg-dolci {
 	background-image: url(../img/menu/dolci.jpeg)
 }
 
-.bgSnackImg {
+.bg-snack {
 	background-image: url(../img/menu/snack.jpg)
+}
+
+.bg-bimbi {
+	background-image: url(../img/menu/bimbi.jpg)
+}
+
+
+.bg-bar {
+	background-image: url(../img/menu/bar.jpg)
 }
 
 .accordion {
