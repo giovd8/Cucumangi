@@ -1,0 +1,94 @@
+@media screen and (max-width: 992px) {
+    #nav {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .nav-link.active:after {
+        height:0.2em;
+        width: 20%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h3 {
+        font-size: 1.5em
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        margin: 0;
+        padding:0;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .logo {
+        height: 2em;
+    }
+
+      .bg-home{
+        background-attachment: scroll;  /*these changes is for solving ios problems*/
+    }
+
+    .bg-contact {
+        background-attachment: scroll;
+    }
+
+    .description {
+        padding: 2em 1em;
+    }
+
+    #about {
+         padding: 4em 1em;
+    }
+
+    #pizze-snack, #ristorante {
+         padding: 4em 0em;
+    }
+
+    #menu {
+         padding: 4em 2em !important;
+    }
+
+    #gallery {
+         padding: 4em 0em;
+    }
+
+    #contact {
+        padding: 4em 3em;
+    }
+
+    #contact .fas { 
+        margin:1em 0 0.5em 0; 
+    }
+
+    #contact h4 {
+        font-size: 1em;
+    }
+
+    #back-to-top {
+        bottom: 0em;
+        right: 0em;
+    }
+
+    #footer {
+        padding: 1em 0;
+    }
+
+    .social {
+        padding: 0 0.2em;
+    }
+}

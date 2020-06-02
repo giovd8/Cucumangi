@@ -1,0 +1,471 @@
+/*----------------------------*\
+PALETTE COLORI:
+rosso: #CC2623;
+grigio: #717377; 
+\*----------------------------*/
+
+/*----------------------------*\
+            GENERAL
+\*----------------------------*/
+
+body {
+    font-family: 'Short Stack', cursive;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #CC2623;
+}
+
+p {
+    text-align: justify;
+    color: #717377;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+h5 {
+    color: #CC2623;
+    padding: 0.8em 0;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Kalam', cursive;
+    padding-bottom: 1em;
+    margin: 0 auto;
+}
+
+.title:after {
+    content:"";
+  	display:block;
+  	height:0.1em;
+  	width:2em;
+  	background-color: #CC2623;
+    margin: 0 auto;
+}
+
+
+/*----------------------------*\
+            NAVBAR
+\*----------------------------*/
+
+#nav {
+    padding: 0.5em 2em;
+}
+
+#nav .navbar-toggler {
+    padding: 0;
+    font-size: 1em;
+}
+
+.logo {
+    height: 2.5em;
+}
+
+.fa-bars, .fa-times {
+    color: #CC2623
+}
+
+#times {
+    display: none;
+}
+
+#bar {
+    display: inline-block;
+}
+
+.scroll {
+    background-color: #FFF;
+    box-shadow: 0px 2px 2px #8080807a;
+}
+
+.scroll a {
+    color: #000;
+}
+
+.scroll a:hover {
+    color: #CC2623;
+}
+
+.nav-link.active {
+    color: #CC2623;
+}
+
+.nav-link.active:after {
+    content:"";
+  	display:block;
+  	height:0.1em;
+  	background-color: #CC2623;
+}
+
+.progress {
+    position: fixed;
+}
+
+
+/*----------------------------*\
+              HOME
+\*----------------------------*/
+
+#home {
+    height: 100vh;
+    color: #FFF;
+}
+
+.home-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background: #242527;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-home{
+    background-image: url('../img/background.JPG');
+}
+
+
+/*----------------------------*\
+              ABOUT
+\*----------------------------*/
+
+#about {
+    padding: 5em 6em;
+    background-color: #242527;
+    color: white;
+}
+
+#about p {
+    color: white;
+}
+
+.red {
+    color: #CC2623 !important;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+}
+
+.dx {
+    margin-right: 0;
+}
+
+
+/*----------------------------*\
+    PIZZA & SNACK, RISTORANTE
+\*----------------------------*/
+
+#pizze-snack, #ristorante {
+    padding: 5em 6em;
+}
+
+.animation-LR:after, .animation-TB:after {
+    content: "";
+    background-color: #242527;
+    position: absolute;
+    z-index: -1;
+}
+
+.animation-LR:after {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 0%;
+    -webkit-transition: 0.2s width;
+    transition: 0.2s width;
+}
+
+.animation-TB:after {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0%;
+    -webkit-transition: 0.2s height;
+    transition: 0.2s height;
+}
+
+.animation-LR:hover:after {
+    width: 100%;
+    height: auto;
+}
+
+.animation-TB:hover:after {
+    height: 100%;
+}
+
+.description {
+    position: relative;
+    text-align: center;
+    border: 1px solid #EEE;
+    padding: 10%;
+    box-shadow: 0px 4px 2px #8080807A;
+    margin-bottom: 1em;
+}
+
+.description:hover h3 {
+    color: #FFF;
+}
+
+.description:hover p {
+    color: #FFF;
+}
+
+
+/*----------------------------*\
+            Menu
+\*----------------------------*/
+
+#menu {
+    padding: 5em 6em !important;
+    background-color: #242527;
+    color: white;
+}
+
+#menu p {
+    margin: 0 auto;
+    color: white;
+}
+
+#menuPage .title{
+    padding-top: 2em !important;
+}
+
+.bg-menu{
+    background-image: url('../img/gallery/pizze-snack4.JPG');
+}
+
+.bg-menuPage-container {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-menuPage{
+    background-image: url('../img/menu/background.jpeg');
+}
+
+.bg-menuProperty {
+	background-position: center;
+	background-size: cover
+}
+
+.bg-insalate {
+	background-image: url(../img/menu/insalate.jpg)
+}
+
+.bg-antipasti {
+	background-image: url(../img/menu/antipasti.jpg)
+}
+
+.bg-primi {
+	background-image: url(../img/menu/primi.jpg)
+}
+
+.bg-secondi {
+	background-image: url(../img/menu/griglia.jpeg)
+}
+
+.bgContorniImg {
+	background-image: url(../img/menu/contorni.jpeg)
+}
+
+.bgPizzeImg {
+	background-image: url(../img/menu/pizze.JPG);
+	background-position: center
+}
+
+.bgDolciImg {
+	background-image: url(../img/menu/dolci.jpeg)
+}
+
+.bgSnackImg {
+	background-image: url(../img/menu/snack.jpg)
+}
+
+.accordion {
+	padding: 3em 0;
+	width: 100%;
+	margin: 0 auto
+}
+
+.card-header {
+	padding: 3em 1em
+}
+
+
+/*----------------------------*\
+            Gallery
+\*----------------------------*/
+
+#gallery {
+    padding: 6em 5em;
+}
+
+.btn-selection {
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 2em;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 3px 5px rgba(0,0,0,.125);
+}
+
+.tz-gallery {
+    padding: 0.5em;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 2em;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+/*----------------------------*\
+            Contact
+\*----------------------------*/
+
+.bg-img2 {
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.bg-contact{
+    background-image: url('../img/building.jpg');
+}
+
+#contact {
+    padding: 5em 6em;
+}
+
+#contact a {
+    color: #1A0DAB;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact h4{
+    text-align: center;
+    margin-top: 3em;
+}
+
+#contact .fas {
+    color: #CC2623;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 4px 2px #8080807A;  
+    margin:1em 0; 
+}
+
+
+/*----------------------------*\
+          Back to top
+\*----------------------------*/
+
+#back-to-top {
+  	display: none;
+  	position: fixed;
+  	bottom: 1em;
+  	right: 1em;
+  	z-index: 9998;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+  	cursor: pointer;
+}
+
+#back-to-top:hover {
+    opacity: 0.8;
+}
+
+#back-to-top a {
+    text-decoration: none;
+}
+
+
+/*----------------------------*\
+            Footer
+\*----------------------------*/
+
+#footer {
+    position: relative;
+    margin-top: 1em;
+    padding: 2em 4em;
+    background-color: #242527;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 1em;
+    margin: 1em 0;
+    color: white;
+}
+
+#footer .fab, .fas {
+    width: auto;
+    margin: 0.5em 0.5em;
+     color: #CC2623;
+    text-shadow: none;
+}
+
+.social {
+    width: 100%;
+    margin:1em 0; 
+    text-align: center;
+}
+
