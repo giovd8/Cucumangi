@@ -4,22 +4,28 @@
 // });
 
 //change menu color
-window.onscroll = function() {
-    "use strict";
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("nav").classList.add("scroll");
-    } 
-    else {
-        document.getElementById("nav").classList.remove("scroll");
-    }
+const menuPage=document.querySelector('#menuPage');
+if(menuPage===null){
+    window.onscroll = function() {
+        "use strict";
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("nav").classList.add("scroll");
+        } 
+        else {
+            document.getElementById("nav").classList.remove("scroll");
+        }
 
-    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-        document.getElementById("back-to-top").style.display = "block";
-    } 
-    else {
-        document.getElementById("back-to-top").style.display = "none";
-    }
-};
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("back-to-top").style.display = "block";
+        } 
+        else {
+            document.getElementById("back-to-top").style.display = "none";
+        }
+    };
+}
+else {
+    document.getElementById("nav").classList.add("scroll");
+}
 
 //change svg hm menu
 $(document).ready(function () {
@@ -53,10 +59,28 @@ $('#back-to-top').on('click', function () {
 });
 
 //initialiaze gallery
-const gallery = document.querySelector('tz-gallery');
+const gallery = document.querySelector('.tz-gallery');
 if(gallery !== null) {
     baguetteBox.run('.tz-gallery');
 }
+
+//animation menu
+const menuButton = document.querySelectorAll('.btn-light')
+menuButton.forEach((button) => {
+    button.addEventListener('click', (e)=> {
+        e.preventDefault()
+        const btn =button.id;
+        if(btn!=="bar"){
+            
+            const view = document.getElementById(btn);
+            view.scrollIntoView(true);
+        }
+        else{
+            window.location = "https://www.cucumangi.it/menu_drink.pdf";
+        }
+    })
+
+})
 
 //solving IOS problem
 $(document).ready(function () {
@@ -75,7 +99,6 @@ $(document).ready(function () {
         document.body.style.top = '0';
         document.getElementById("nav").style.display = "flex";
         document.getElementById('gallery').scrollIntoView(true);//ok
-        
     });
     $(document).keyup(function (e) {
         if (e.key === "Escape") { // escape key maps to keycode `27`

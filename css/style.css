@@ -257,16 +257,22 @@ h5 {
 
 #menu p {
     margin: 0 auto;
-    color: white;
+    /* color: white; */
 }
 
 #menuPage .title{
-    padding-top: 4em !important;
+    position: relative;
+    top: 3em;
+    background-color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    /* padding-top: 4em !important; */
     color: black !important;
 }
 
 .bg-menu{
-    background-image: url('../img/gallery/pizze-snack4.JPG');
+    background-image: url('../img/bar.jpg');
 }
 
 .bg-menuPage-container {
@@ -277,7 +283,7 @@ h5 {
 }
 
 .bg-menuPage{
-    background-image: url('../img/menu/background.JPG');
+    background-image: url('../img/menu/backgrund.jpg');
 }
 
 .bg-menuProperty {
@@ -298,7 +304,7 @@ h5 {
 }
 
 .bg-secondi {
-	background-image: url(../img/menu/griglia.jpeg)
+	background-image: url(../img/menu/griglia.JPG)
 }
 
 .bg-contorni {
@@ -307,7 +313,6 @@ h5 {
 
 .bg-pizze {
 	background-image: url(../img/menu/pizze.JPG);
-	background-position: center
 }
 
 .bg-dolci {
@@ -321,7 +326,6 @@ h5 {
 .bg-bimbi {
 	background-image: url(../img/menu/bimbi.jpg)
 }
-
 
 .bg-bar {
 	background-image: url(../img/menu/bar.jpg)
@@ -391,7 +395,7 @@ h5 {
     height: 20vh;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;  
+    background-attachment: fixed;
 }
 
 .bg-contact{

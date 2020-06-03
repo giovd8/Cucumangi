@@ -39,7 +39,7 @@
         height: 2em;
     }
 
-      .bg-home{
+    .bg-home{
         background-attachment: scroll;  /*these changes is for solving ios problems*/
     }
 
@@ -51,6 +51,11 @@
         padding: 2em 1em;
     }
 
+    #home {
+        margin-top: -7em;
+        padding: 1em;
+    }
+
     #about {
          padding: 4em 1em;
     }
@@ -60,10 +65,14 @@
     }
 
     #menu {
-         padding: 4em 2em !important;
+         padding: 4em 0.5em !important;
     }
 
     .accordion {
+        padding: 0;
+    }
+
+    .card-body {
         padding: 0;
     }
 
